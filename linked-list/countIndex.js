@@ -18,8 +18,8 @@ class LinkedList {
 			this.length++;
 		} else {
 			var current = this.head;
-			for(let i = 0; i < this.length; i++){
-				current = current.head;
+			while(current.next){
+				current = current.next;
 			}
 			current.next = newNode;
 		}
