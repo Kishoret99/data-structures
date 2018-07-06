@@ -30,8 +30,9 @@ class LinkedList {
 			return;
 		}
 		var current  = this.head;
-		for(let i = 0; i < this.length ; i++) {
-		console.log('value is ', current.value)
+		while(current.next) {
+			console.log('value is ', current.value);
+			current = current.next;
 		}
 
 	}
