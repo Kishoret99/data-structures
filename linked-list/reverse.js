@@ -50,6 +50,8 @@ class LinkedList {
 
 
 
+
+
 let a = new LinkedList();
 a.push('1');
 a.push('2');
@@ -59,4 +61,12 @@ a.push('5');
 a.push('6');
 
 a.reverse();
-a.print()
+a.print();
+
+function reverse(list) {
+    while(list.head) {
+
+        return reverse(list)
+    } 
+
+}
