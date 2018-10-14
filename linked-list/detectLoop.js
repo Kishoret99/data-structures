@@ -57,10 +57,22 @@ class LinkedList {
             currNode.next = indexNode;
         }
     }
+
+    detectLoop() {
+        let currNode = this.head;
+        while(currNode.next) {
+            if(currNode.visited) {
+                return true;
+            }
+            currNode = currNode.next;
+            currNode.visited = true;
+        }
+    }
 }
 
 let a  = new LinkedList();
 a.insert(1);a.insert(2);a.insert(3);a.insert(4);a.insert(5);a.insert(6);a.insert(7);
 a.valueOf(0);
 a.createLoop(1)
+console.log(a.detectLoop())
 // console.log(a)
