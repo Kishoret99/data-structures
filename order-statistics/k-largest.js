@@ -24,5 +24,5 @@ function partition(array, pivot) {
     return [left, pivot, right]
 }
 
-var hello  = topK(a,9)
+var hello  = topK(a,3)
 console.log(hello)
